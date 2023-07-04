@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subir proyectos de Angular a Firebase</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="bod">
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <h1  class="text-center bg-info text-white">Subir proyectos de Angular a Firebase</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Paso 1: Crear un proyecto en Firebase</h3>
+        <p>Ve a la consola de Firebase (<a href="https://console.firebase.google.com/" target="_blank">https://console.firebase.google.com/</a>) y crea un nuevo proyecto.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Paso 2: Configurar el proyecto de Angular</h3>
+        <p>Abre tu proyecto de Angular y ejecuta el siguiente comando para instalar Firebase CLI:</p>
+        <pre><code>npm install -g firebase-tools</code></pre>
+        <p>Luego, autentícate con Firebase usando el siguiente comando:</p>
+        <pre><code>firebase login</code></pre>
+        <p>Después de la autenticación, vincula tu proyecto de Angular a Firebase usando:</p>
+        <pre><code>firebase init</code></pre>
+        <p>Elige "Hosting" como función y selecciona tu proyecto de Firebase.</p>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h3>Paso 3: Construir el proyecto de Angular</h3>
+        <p>Genera una versión optimizada de tu proyecto de Angular usando:</p>
+        <pre><code>ng build --prod</code></pre>
+        <p>Esto creará una carpeta "dist" en tu proyecto.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Paso 4: Implementar el proyecto en Firebase</h3>
+        <p>Finalmente, implementa tu proyecto en Firebase usando:</p>
+        <pre><code>firebase deploy</code></pre>
+        <p>Después de que se complete la implementación, recibirás una URL donde puedes acceder a tu proyecto.</p>
+        <p><img src="assets/upload.jpg" id="img_prin"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="col-md-6">
+      <h3>Objetivo</h3>
+      <p>El objetivo de este ejercicio es adquirir los siguientes conocimientos.</p>
+      <ul>
+        <li>1. Uso de componentes en Angular</li>
+        <li>2. Despliegue del proyecto Angular en Firebase</li>
+        <li><a href="https://angular.io">Documentación de Angular</a></li>
+        <li><a href="https://firebase.google.com/?hl=es">Página de Firebase</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (requiere jQuery) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='js/main.js'></script>
+</body>
+</html>
+
